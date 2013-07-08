@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+    <script>
+        $('#myTab a').click(function (e) {
+          e.preventDefault();
+          $(this).tab('show');
+        })
+    </script>
+  </head>
+
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="home.html">Jooliett</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav" role="navigation">
+              <li class="dropdown">
+                <a id="drop2" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Woman <b class="caret"></b></a>
+                <!-- Dropdown Menu -->
+                <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="products.html">New Arrival</a></li>
+                  <li role="presentation" class="divider"></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="products.html">Tops</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="products.html">Bottoms</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="products.html">Dress</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="products.html">Outwear</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="products.html">Sepatu</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="products.html">Tas</a></li>
+                </ul>
+              </li>
+              <li><a href="#mixmatch">Mix &amp; Match</a></li>
+              <li><a href="#socmed">Social Media</a></li>
+            </ul>
+            <ul class="nav pull-right">
+              <li id="fat-menu" class="dropdown">
+                <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown"><span class="qcart-count">3</span> Cart<b class="caret"></b></a>
+                <div class="dropdown-menu quickcart" role="menu" aria-labelledby="drop3">
+                  <!-- QuickCart -->
+                  <div class="qcart-item row">
+                      <div class="span1">
+                          <img src="img/dummy-data/jooliett-0993-small.jpg">
+                      </div>
+                      <div class="span2 qcart-details">
+                          <span class="qcart-item-name">Yellow Mickey Mouse</span>
+                          <span class="qcart-item-price">IDR 249.000</span>
+                      </div>
+                  </div>
+
+                  <!-- QuickCart -->
+                  <div class="qcart-item row">
+                      <div class="span1">
+                          <img src="img/dummy-data/jooliett-0996-small.jpg">
+                      </div>
+                      <div class="span2 qcart-details">
+                          <span class="qcart-item-name">Yellow Mickey Mouse</span>
+                          <span class="qcart-item-price">IDR 249.000</span>
+                      </div>
+                  </div>
+                  <!-- /qcart-item -->
+                  <div class="qcart-action">
+                      <p class="msg success">Successfully Added to cart</p>
+                      <button class="btnflat-fluid dark">View Shopping Cart!</button>
+                      <p>or</p>
+                      <button class="btnflat-fluid action">Checkout</button>
+                  </div>
+                </div><!-- ./quickcart -->
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!-- ./container -->
+      </div><!-- ./navbar-inner -->
+    </div><!-- ./navbar navbar-inverse -->
+
+    <div class="container">
+      <!-- Item Details -->
+      <div class="row-fluid prod-details-container">
+        <div class="span6">
+          <img src="img/dummy-data/Jooliett-0994-b.jpg" alt="Item Details">
+        </div><!-- ./span6 -->
+        <div class="span1">
+          <ul class="unstyled prod-minithumb">
+            <li><a href="#action1"><img src="img/dummy-data/Jooliett-0994-small.jpg" class="prod-minithumb" alt="Thumb01"></a></li>
+             <li><a href="#action2"><img src="img/dummy-data/Jooliett-0993-small.jpg" class="prod-minithumb" alt="Thumb01"></a></li>
+             <li><a href="#action3"><img src="img/dummy-data/Jooliett-0996-small.jpg" class="prod-minithumb" alt="Thumb01"></a></li>
+             <li><a href="#action4"><img src="img/dummy-data/Jooliett-0997-small.jpg" class="prod-minithumb" alt="Thumb01"></a></li>
+          </ul>
+        </div><!-- ./span1 -->
+
+        <div class="span5 pull-right">
+          <div class="prod-details">
+            <h2>Dress with Contrasting Neckline</h2>
+            <!-- Tabs -->
+            <div class="prod-tab">
+              <ul id="myTab" class="nav nav-tabs">
+                <li class="active"><a href="#desc" data-toggle="tab">Description</a></li>
+                <li><a href="#sizeguide" data-toggle="tab"  >Size Guide</a></li>
+                <li><a href="#shipping" data-toggle="tab">Shipping</a></li>
+              </ul>
+              
+              <div class="tab-content">
+                <div class="tab-pane active" id="desc">
+                  <p>The cutest denim skater dress featuring a plunging neckline and criss cross lattice back straps. Side zip closure.</p>          
+                  <ul>
+                    <li>*Cotton/Polyester Blend</li>
+                    <li>*26" bust</li>
+                    <li>*26" waist</li>
+                    <li>*32" length</li>
+                    <li>*Model is wearing size small</li>
+                    <li>*Measurements taken from size small</li>
+                    <li>*Hand wash cold</li>
+                    <li>*Made in USA</li>
+                  </ul>
+                  <p> Looks perfect paired with circle shades and a crossbody bag! By Jooliett.</p>
+                </div>
+                <div class="tab-pane" id="sizeguide">
+                  <table class="table table-striped">
+                    <tr>
+                      <th width="10%">Size</th>
+                      <th width="30%">Pant Size<br>(Inches)</th>
+                      <th>US</th>
+                      <th>UK</th>
+                    </tr>
+                    <tr>
+                      <td>XXS</td>
+                      <td>24</td>
+                      <td>0</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>P/XS</td>
+                      <td>25,26</td>
+                      <td>2</td>
+                      <td>6</td>
+                    </tr>
+                    <tr>
+                      <td>S</td>
+                      <td>27,28</td>
+                      <td>4</td>
+                      <td>8</td>
+                    </tr>
+                    <tr>
+                      <td>M</td>
+                      <td>29,30</td>
+                      <td>6</td>
+                      <td>10</td>
+                    </tr>
+                  </table>
+                  <p>Please use these size charts to help determine your size. Because sizing and cut 
+will vary between brands, please use the charts as a general guide to compare the various size scales. If you have a specific sizing question or would like more information, please contact Customer Care.</p>
+                </div>
+                <div class="tab-pane" id="shipping">
+                    <ul>
+                      <li>You can return your purchase for up to 365 days from the purchase date. If you purchase on 2/29 of a Leap Year, then you have until 2/29 the following Leap Year to return those orders. That's four whole years! Woot!</li>
+
+                      <li>Products must be in the condition you received them and in the original box and/or packaging.
+                      Return shipping is absolutely FREE.</li>
+
+                      <li>You will be provided with a pre-paid UPS domestic or USPS domestic label to return the purchase to us.*</li>
+
+                      <li>Please do not send your purchase back to the manufacturer.</li>
+
+                      <li>Once your return is received and inspected by the fulfillment centers (usually within 72 hours of receipt),your refund will be processed and a credit will be automatically applied to your credit card or original method of payment within 7 days. Please note that depending on your credit card company, it may take an additional 2-10 business days after your credit is applied for it to post to your account. As part of our 365-day return policy, all returns will need to be received and processed by our warehouse within 365 days of purchase.</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+
+            <ul class="unstyled">
+              <li><span class="prod-price details">IDR 2.6999.999</span></li>
+              <li><span class="">Discount 50%<span></li>
+              <li><span class="prod-price details">IDR 2.6999.999</span></li>
+            </ul>
+
+            <!-- Color -->
+            <div class="wrapper color-tag">
+              <span class="color-tag salmon"><a href="">Salmon</a></span>
+              <span class="color-tag golden"><a href="">Golden Rod</a></span>
+              <span class="color-tag hotpink"><a href="">Hot Pink</a></span>
+              <span class="color-tag teal"><a href="">Teal</a></a></span>
+              <span class="color-tag navyblue"><a href="">Navy Blue</a></span>
+              <span class="color-tag crimson"><a href="">Crimson</a></span>
+            </div>
+
+            <!-- Size -->
+            <div class="wrapper size-tag">
+              <span class="size-tag"><a href="">S</a></span>
+              <span class="size-tag"><a href="">M</a></span>
+              <span class="size-tag"><a href="">L</a></span>
+              <span class="size-tag"><a href="">XL</a></span>
+              <span class="size-tag"><a href="">XXL</a></span>
+            </div>
+            
+            <div class="cta">
+              <button class="btnflat-fluid action addcart">Buy</button>
+            </div>
+          </div>
+        </div><!-- ./span4 -->
+      </div><!-- ./prod-details-container -->
+
+      <!-- Products You May Like -->
+      <h4 class="section-title"><span>You may also like</span></h4>
+      <div class="row-fluid prod-related">
+          <div class="span3">
+              <div class="prod2">
+                  <img src="img/dummy-data/item01.jpg">
+                  <div class="prod2-meta">
+                      <span class="prod-title"><a href="#link2" title="Link 1">Red Skirt</a></span>
+                      <span class="prod-desc">Handmade product by raniya dress</span>
+                      <span class="prod-price">IDR 234.567</span>
+                  </div>
+              </div>
+          </div>
+          <div class="span3">
+              <div class="prod2">
+                  <img src="img/dummy-data/item02.jpg">
+                  <div class="prod2-meta">
+                      <span class="prod-title"><a href="#link2" title="link 2">Yellow Square Skirts Pattern</a></span>
+                      <span class="prod-desc">Chiara Maxi Skirt</span>
+                      <span class="prod-status disc">OFF 50%</span>
+                      <span class="prod-price line-through">IDR 250.000</span>
+                      <span class="prod-price">IDR 125.000</span>
+                  </div>
+              </div>
+          </div>
+          <div class="span3">
+              <div class="prod2">
+                  <img src="img/dummy-data/item03.jpg">
+                  <div class="prod2-meta">
+                      <span class="prod-title"><a href="#link3" title="link 3">Yellow Square Skirts Pattern</a></span>
+                      <span class="prod-desc">Chiara Maxi Skirt</span>
+                      <span class="prod-price">IDR 234.567</span>
+                      <span class="prod-status outstock">Out of Stock</span>
+                      
+                  </div>
+              </div>
+          </div>
+          <div class="span3">
+              <div class="prod2">
+                  <img src="img/dummy-data/item04.jpg">
+                  <div class="prod2-meta">
+                      <span class="prod-title"><a href="#link4" title="link 4">Yellow Square Skirts Pattern</a></span>
+                      <span class="prod-desc">Chiara Maxi Skirt</span>
+                      <span class="prod-price">IDR 234.567</span>
+                  </div>
+              </div>
+          </div>  
+      </div><!-- ./row-fluid -->
+
+    </div><!-- ./container -->
+
+    <!-- Footer -->
+    <div id="footer">
+      <div class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="navbar-inner">
+          <div class="container">
+            <div class="span2">&copy; 2013 Jooliett</div>
+            <div class="span9">
+                <ul class="inline">
+                  <li><a href="#company">Company</a></li>
+                  <li><a href="#policies">Policies</a></li>
+                  <li><a href="#shipping">Shipping</a></li>
+                  <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+  </body>
+</html>
