@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+<!--     <link href="css/bootstrap-responsive.css" rel="stylesheet"> -->
     <link href="css/custom.css" rel="stylesheet">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -94,7 +94,7 @@
     <div class="container">
       <!-- Item Details -->
       <div class="row-fluid prod-details-container">
-        <div class="span6">
+        <div class="span5">
           <img src="img/dummy-data/Jooliett-0994-b.jpg" alt="Item Details">
         </div><!-- ./span6 -->
         <div class="span1">
@@ -106,7 +106,7 @@
           </ul>
         </div><!-- ./span1 -->
 
-        <div class="span5 pull-right">
+        <div class="span6 pull-right">
           <div class="prod-details">
             <h2>Dress with Contrasting Neckline</h2>
             <!-- Tabs -->
@@ -185,11 +185,29 @@ will vary between brands, please use the charts as a general guide to compare th
               </div>
             </div>
 
-            <ul class="unstyled">
-              <li><span class="prod-price details">IDR 2.6999.999</span></li>
-              <li><span class="">Discount 50%<span></li>
-              <li><span class="prod-price details">IDR 2.6999.999</span></li>
-            </ul>
+            <!-- Normal -->
+            <div class="row-fluid prod-price-details">
+              <div class="span12">
+                  <span class="price">IDR 2.6999.999</span>
+              </div>
+            </div>
+
+            <!-- Discount -->
+            <div class="row-fluid prod-price-details">
+              <div class="span4"><span class="discount">OFF 50%<span></div>
+              <div class="span7">
+                  <span class="discounted">IDR 2.6999.999</span>
+                  <span class="price">IDR 2.6999.999</span>
+              </div>
+            </div>
+
+            <!-- Out of Stock -->
+            <div class="row-fluid prod-price-details">
+              <div class="span4"><span class="outstock">OUT OF STOCK<span></div>
+              <div class="span7">
+                  <span class="price">IDR 2.6999.999</span>
+              </div>
+            </div>
 
             <!-- Color -->
             <div class="wrapper color-tag">
@@ -210,8 +228,16 @@ will vary between brands, please use the charts as a general guide to compare th
               <span class="size-tag"><a href="">XXL</a></span>
             </div>
             
-            <div class="cta">
-              <button class="btnflat-fluid action addcart">Buy</button>
+            <div class="row-fluid cta">
+              <div class="span5">
+                <ul class="unstyled">
+                  <li><button class="btnflat-fluid default">Add To Cart</button></li>
+                  <li><button class="btnflat-fluid default">Save as Favorite</button></li>
+                </ul>
+              </div>
+              <div class="span7">
+                <button class="btnflat-fluid action addcart">Buy</button>
+              </div>
             </div>
           </div>
         </div><!-- ./span4 -->
@@ -273,14 +299,16 @@ will vary between brands, please use the charts as a general guide to compare th
       <div class="navbar navbar-inverse navbar-fixed-bottom">
         <div class="navbar-inner">
           <div class="container">
-            <div class="span2">&copy; 2013 Jooliett</div>
-            <div class="span9">
-                <ul class="inline">
-                  <li><a href="#company">Company</a></li>
-                  <li><a href="#policies">Policies</a></li>
-                  <li><a href="#shipping">Shipping</a></li>
-                  <li><a href="#contact">Contact Us</a></li>
-                </ul>
+            <div class="row-fluid">
+              <div class="span2">&copy; 2013 Jooliett</div>
+              <div class="span9">
+                  <ul class="inline">
+                    <li><a href="#company">Company</a></li>
+                    <li><a href="#policies">Policies</a></li>
+                    <li><a href="#shipping">Shipping</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                  </ul>
+              </div>
             </div>
           </div>
         </div>

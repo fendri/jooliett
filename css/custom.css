@@ -223,6 +223,7 @@ h1,h2,h3,h4 {
 	text-transform: uppercase;
 }
 .prod-price {
+	line-height: 110%;
 	font-family: proxima_bold, sans-serif;
 }
 .prod-price.line-through {
@@ -230,11 +231,7 @@ h1,h2,h3,h4 {
 	text-decoration: line-through;
 	color: #999;
 }
-.prod-price.details {
-	font-size: 2.4rem;
-	font-family: proxima_light, sans-serif;
-	display: block;
-}
+
 .prod-tab>.nav {
 	margin-bottom: 0;
 }
@@ -267,9 +264,6 @@ h1,h2,h3,h4 {
 .prod-related {
 	margin: 10px 0 20px 0;
 }
-.prod-price {
-	line-height: 110%;
-}
 .prod-minithumb li {
 	margin-bottom: 5px;
 }
@@ -280,6 +274,25 @@ h1,h2,h3,h4 {
 .prod-minithumb a:hover>img {
 	border: 2px solid #f2108a;
 }
+.prod-price-details {
+	font-size: 1.8rem;
+	line-height: 100%;
+	font-family: proxima_light, sans-serif;
+	margin-bottom: 15px;
+	padding-top: 10px;
+}
+.prod-price-details span {
+	display: block;
+}
+.prod-price-details .discounted {
+	text-decoration: line-through;
+	color: #999;
+	font-size: 1.2rem;
+}
+.prod-price-details .discount,.prod-price-details .outstock {
+	color: white;
+	padding: 15px 10px;
+}
 /* Product Status */
 .prod-status {
 	text-align: center;
@@ -287,11 +300,14 @@ h1,h2,h3,h4 {
 	color: #fff;
 	font-weight: bold;
 }
-.outstock {
+.outstock,.prod-price-details.outstock {
 	background-color: #ffba00
 }
-.disc {
+.disc,.prod-price-details .discount {
 	background-color: #fd1e20;
+}
+.cta li {
+	margin-bottom: 3px;
 }
 /* Product Style 2 */
 .prod2 {
@@ -480,8 +496,11 @@ h1,h2,h3,h4 {
 	text-transform: uppercase;
 	min-height: auto;
 }
+#footer [class*="span"] {
+	padding: 0
+}
 #footer .navbar-inner {
-	padding: 7px 0;
+	padding: 7px 0 0 0;
 	min-height: inherit;
 	background-image: none;
 }
@@ -517,6 +536,9 @@ h1,h2,h3,h4 {
 	h2 {
 		font-size: 24.5px; /* h3 size in desktop */
 		line-height: 120%
+	}
+	.prod-price-details .discounted {
+		font-size: 0.8rem;
 	}
 	.prod-details-container {
 		margin-top: 20px;
