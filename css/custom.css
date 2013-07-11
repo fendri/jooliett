@@ -39,6 +39,9 @@ body.subnavbar {
 h1,h2,h3,h4 {
 	font-family: proxima_light, sans-serif;
 }
+a:hover>img {
+	opacity: 0.6
+}
 /* Components */
 
 /*Dropdown Menu - Override */
@@ -253,7 +256,7 @@ h1,h2,h3,h4 {
 	border-right: 1px solid #ddd;
 }
 .tab-pane {
-	max-height: 150px;
+	max-height: 120px;
 	font-size: 0.9rem;
 	line-height: 125%;
 }
@@ -301,6 +304,10 @@ h1,h2,h3,h4 {
 .prod-price-details .discount,.prod-price-details .outstock {
 	color: white;
 	padding: 15px 10px;
+}
+.prod-price-details .outstock {
+	font-size: 1rem;
+	padding: 0 10px
 }
 /* Product Status */
 .prod-status {
@@ -498,13 +505,23 @@ h1,h2,h3,h4 {
 .mm .carousel {
 	margin: 0 0 0 0;
 }
+
+.mm-cover {
+	margin-bottom: 20px;
+}
 .mm-heading {
 	text-align: center;
 	padding: 20px 0 10px 0;
 	margin-bottom: 20px;	
 	border-bottom: 4px solid #ccc;
 }
-.mm-heading h3,.mm-heading h4 {
+.mm-footer {
+	text-align: center;
+	padding: 30px 0 30px 0;
+	margin-top: 40px;	
+	border-top: 4px solid #ccc;
+}
+.mm-heading h3,.mm-heading h4,.mm-footer h4 {
 	margin: 0;
 	text-transform: uppercase;
 }
