@@ -84,7 +84,74 @@
     </div><!-- ./navbar navbar-inverse -->
 
     <div class="container">
-      Shopping Cart
+      <div class="row-fluid">
+        <div class="span12 shopcart">
+          <h3>Your Shopping Cart</h3>
+          <form class="form-inline">
+
+            <table class="table table-bordered table-hover">
+              <tr> 
+                <th class="span6 shopcart-item">Product(s)</th>
+                <th class="span2 shopcart-qty">Quantity</th>
+                <th class="span2 shopcart-price">Sub Total</th>
+              </tr>
+              <!-- Item 1 -->
+              <tr>
+                <td class="row">
+                  <div class="span2">
+                    <img src="img/dummy-data/jooliett-0993-small.jpg">
+                  </div>
+                  <div class="span6">
+                    <ul class="unstyled">
+                      <li>Yellow Mickey Mouse</li>
+                      <li>Discount: 35%</li>
+                      <li>IDR 327.900</li>
+                      <li><i class="icon-remove"></i>&nbsp;<a href="#" title="Remove this item from cart">Remove Item</a></li>
+                      <li><i class="icon-heart"></i>&nbsp;<a href="#" title="Buy later">Save for later</a></li>
+                    </ul>
+                  </div>
+                </td>
+                <td>
+                  <input class="span3" type="text" placeholder="1">
+                  <!-- <button type="submit" class="btn">Update</button> -->
+                </td>
+                <td>IDR 249.000</td>
+              </tr>
+              <!-- Item 2 -->
+              <tr>
+                <td class="row">
+                  <div class="span2">
+                    <img src="img/dummy-data/jooliett-0994-small.jpg">
+                  </div>
+                  <div class="span6">
+                    <ul class="unstyled">
+                      <li>Another Dress</li>
+                      <li>IDR 327.900</li>
+                      <li><i class="icon-remove"></i>&nbsp;<a href="#" title="Remove this item from cart">Remove Item</a></li>
+                      <li><i class="icon-heart"></i>&nbsp;<a href="#" title="Buy later">Save for later</a></li>
+                    </ul>
+                  </div>
+                </td>
+                <td>
+                  <input class="span3" type="text" placeholder="1">
+                  <!-- <button type="submit" class="btn">Update</button> -->
+                </td>
+                <td>IDR 249.000</td>
+              </tr>
+              <!-- Finale -->
+              <tr>
+                <td colspan="2" class="text-align">Total</td>
+                <td class="shopcart-total">IDR. 756.897</td>
+              </tr>
+            </table>
+          </form>
+          <div class="row-fluid">
+            <div class="span9"><a href="">Continue Shopping</a></div>
+            <div class="span3"><button class="pull-right btnflat-fluid action">Proceed to Checkout &raquo;</button></div>
+          </div>
+        </div><!-- ./shoppingcart -->
+      </div><!-- ./ row-fluid -->
+
     </div>
 
     <!-- Footer -->

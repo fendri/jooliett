@@ -161,6 +161,17 @@ a:hover>img {
 	padding-bottom: 23px;
 	font-size: 1.4rem;
 }
+/* Shopping Cart */
+.shopcart th {
+	text-transform: uppercase;
+}
+.shopcart td.text-align {
+	text-align: right;
+	text-transform: uppercase;
+} 
+td.shopcart-total {
+	background-color: #efefef;	
+}
 /* Components: Shared */
 .wrapper {
 	margin: 0 0 20px 0;
