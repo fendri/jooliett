@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Shopping Cart</title>
+    <title>Checkout - Order Summary</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -83,73 +83,99 @@
       </div><!-- ./navbar-inner -->
     </div><!-- ./navbar navbar-inverse -->
 
-    <div class="container">
+    <div class="container checkout summary">
       <div class="row-fluid">
-        <div class="span12 shopcart">
-          <h3>Your Shopping Cart</h3>
-          <form class="form-inline">
+        <div class="span12">     
 
-            <table class="table table-bordered table-hover">
-              <tr> 
-                <th class="span6 shopcart-item">Product(s)</th>
-                <th class="span2 shopcart-qty">Quantity</th>
-                <th class="span2 shopcart-price">Sub Total</th>
-              </tr>
-              <!-- Item 1 -->
-              <tr>
-                <td class="row">
-                  <div class="span2">
-                    <img src="img/dummy-data/jooliett-0993-small.jpg">
-                  </div>
-                  <div class="span6">
-                    <ul class="unstyled">
-                      <li>Yellow Mickey Mouse</li>
-                      <li>Discount: 35%</li>
-                      <li>IDR 327.900</li>
-                      <li><i class="icon-remove"></i>&nbsp;<a href="#" title="Remove this item from cart">Remove Item</a></li>
-                      <li><i class="icon-heart"></i>&nbsp;<a href="#" title="Buy later">Save for later</a></li>
-                    </ul>
-                  </div>
-                </td>
-                <td>
-                  <input class="span3" type="text" placeholder="1">
-                  <!-- <button type="submit" class="btn">Update</button> -->
-                </td>
-                <td>IDR 249.000</td>
-              </tr>
-              <!-- Item 2 -->
-              <tr>
-                <td class="row">
-                  <div class="span2">
-                    <img src="img/dummy-data/jooliett-0994-small.jpg">
-                  </div>
-                  <div class="span6">
-                    <ul class="unstyled">
-                      <li>Another Dress</li>
-                      <li>IDR 327.900</li>
-                      <li><i class="icon-remove"></i>&nbsp;<a href="#" title="Remove this item from cart">Remove Item</a></li>
-                      <li><i class="icon-heart"></i>&nbsp;<a href="#" title="Buy later">Save for later</a></li>
-                    </ul>
-                  </div>
-                </td>
-                <td>
-                  <input class="span3" type="text" placeholder="1">
-                  <!-- <button type="submit" class="btn">Update</button> -->
-                </td>
-                <td>IDR 249.000</td>
-              </tr>
-              <!-- Finale -->
-              <tr>
-                <td colspan="2" class="text-align">Total</td>
-                <td class="shopcart-total">IDR. 756.897</td>
-              </tr>
-            </table>
-          </form>
-          <div class="row-fluid">
-            <div class="span9"><a href="">Continue Shopping</a></div>
-            <div class="span3"><button class="pull-right btnflat-fluid action">Proceed to Checkout &raquo;</button></div>
+          <h3>Confirm &amp; Pay</h3> 
+
+          <h4>Order Summary</h4>     
+          <table class="table table-bordered table-condensed">
+            <tr>
+              <th>Product Name</th>
+              <th class="span2">Quantity</th>
+              <th class="span2">Total</th>
+            </tr>
+            <tr>
+              <td>ASOS Scraf with Block Stripe - Multi / One Size</td>
+              <td>1</td>
+              <td>IDR 675.000</td>
+            </tr>
+            <tr>
+              <td colspan="2" style="text-align: right">Sub Total :</td>
+              <td>IDR 675.000</td>
+            </tr>
+            <tr>
+              <td colspan="2" style="text-align: right">Shipping :</td>
+              <td>IDR 0</td>
+            </tr>
+            <tr>
+              <td colspan="2" style="text-align: right">Total : </td>
+              <td>IDR 675.000</td>
+            </tr>
+          </table>
+          <p class="text-right" ><a href="#" title="Edit / Add">Edit/Add</a></p>
+
+          <h4>Select Shipping &amp; Billing Address</h4>
+          <table class="table table-bordered table-condensed">
+            <tr>
+              <th>Address</th>
+              <th class="span2">Billing</th>
+              <th class="span2">Shipping</th>
+            </th>
+            <tr>
+              <td>Jl. Candi Brahma VI Blok B</td>
+              <td><input type="radio" checked></td>
+              <td><input type="radio"></td>
+            </tr>
+            <tr>
+              <td>Jl. Mendawai 5 No. 78</td>
+              <td><input type="radio"></td>
+              <td><input type="radio" checked></td>
+            </tr>
+          </table>
+          <p class="text-right" ><a href="#" title="Edit / Add">Edit/Add</a></p>
+
+          <h4>Select Shipping Type</h4>
+          <table class="table table-bordered table-condensed">
+            <tr>
+              <td>Standard Shipping</td>
+              <td>Delivered on or before Tuesday 28 September 2013</td>
+              <td class="span2"><input type="radio" checked></td>
+              <td class="span2">IDR 0</td>
+            </th>
+            <tr>
+              <td>Express</td>
+              <td>Delivered on or before Tuesday 20 September 2013</td>
+              <td><input type="radio"></td>
+              <td>IDR 78.000</td>
+            </tr>
+          </table>
+          <p class="text-right" ><a href="#" title="Edit / Add">Edit/Add</a></p>
+
+          <h4>Selected Payment Method</h4>
+          <table class="table table-bordered table-condensed">
+            <tr>
+              <th>Type</th>
+              <th>Number</th>
+              <th>Name</th>
+              <th>Select</th>
+            </tr>
+            <tr>
+              <td><img src="img/paypal-straight-32px.png" alt="paypal"></td>
+              <td>N/A</td>
+              <td>N/A</td>
+              <td>N/A</td>
+            </tr>
+          </table>
+          <p class="text-right" ><a href="#" title="Edit / Add">Edit/Add</a></p>
+
+          <div class="place-order text-center">
+            <button class="btnflat action">Place Order</button>
+            <p>By clicking PLACE ORDER you confirm that you have read, understood and accept our <a href="#" title="">Terms and Conditions</a>, <a href="#" title="">Returns Privacy</a> and <a href="#" title="">Privacy Policy</a>
           </div>
-        </div><!-- ./shoppingcart -->
+
+        </div><!-- ./span12 -->
       </div><!-- ./ row-fluid -->
     </div><!-- ./container -->
 

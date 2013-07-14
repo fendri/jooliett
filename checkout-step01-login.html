@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Shopping Cart</title>
+    <title>Login to Checkout</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -83,73 +83,60 @@
       </div><!-- ./navbar-inner -->
     </div><!-- ./navbar navbar-inverse -->
 
-    <div class="container">
+    <div class="container checkout">
       <div class="row-fluid">
-        <div class="span12 shopcart">
-          <h3>Your Shopping Cart</h3>
-          <form class="form-inline">
+        <div class="span12">     
 
-            <table class="table table-bordered table-hover">
-              <tr> 
-                <th class="span6 shopcart-item">Product(s)</th>
-                <th class="span2 shopcart-qty">Quantity</th>
-                <th class="span2 shopcart-price">Sub Total</th>
-              </tr>
-              <!-- Item 1 -->
-              <tr>
-                <td class="row">
-                  <div class="span2">
-                    <img src="img/dummy-data/jooliett-0993-small.jpg">
-                  </div>
-                  <div class="span6">
-                    <ul class="unstyled">
-                      <li>Yellow Mickey Mouse</li>
-                      <li>Discount: 35%</li>
-                      <li>IDR 327.900</li>
-                      <li><i class="icon-remove"></i>&nbsp;<a href="#" title="Remove this item from cart">Remove Item</a></li>
-                      <li><i class="icon-heart"></i>&nbsp;<a href="#" title="Buy later">Save for later</a></li>
-                    </ul>
-                  </div>
-                </td>
-                <td>
-                  <input class="span3" type="text" placeholder="1">
-                  <!-- <button type="submit" class="btn">Update</button> -->
-                </td>
-                <td>IDR 249.000</td>
-              </tr>
-              <!-- Item 2 -->
-              <tr>
-                <td class="row">
-                  <div class="span2">
-                    <img src="img/dummy-data/jooliett-0994-small.jpg">
-                  </div>
-                  <div class="span6">
-                    <ul class="unstyled">
-                      <li>Another Dress</li>
-                      <li>IDR 327.900</li>
-                      <li><i class="icon-remove"></i>&nbsp;<a href="#" title="Remove this item from cart">Remove Item</a></li>
-                      <li><i class="icon-heart"></i>&nbsp;<a href="#" title="Buy later">Save for later</a></li>
-                    </ul>
-                  </div>
-                </td>
-                <td>
-                  <input class="span3" type="text" placeholder="1">
-                  <!-- <button type="submit" class="btn">Update</button> -->
-                </td>
-                <td>IDR 249.000</td>
-              </tr>
-              <!-- Finale -->
-              <tr>
-                <td colspan="2" class="text-align">Total</td>
-                <td class="shopcart-total">IDR. 756.897</td>
-              </tr>
-            </table>
-          </form>
+          <h3>Checkout</h3>      
           <div class="row-fluid">
-            <div class="span9"><a href="">Continue Shopping</a></div>
-            <div class="span3"><button class="pull-right btnflat-fluid action">Proceed to Checkout &raquo;</button></div>
-          </div>
-        </div><!-- ./shoppingcart -->
+            <!-- <div class="span4">
+              <h4>Purchased Products</h4>
+              <table class="table table-condensed">
+                <tr>
+                  <td>Cool Dress Women</td>
+                  <td>Qty: 1</td>
+                  <td>IDR 230.000</td>
+                </tr>
+                 <tr>
+                    <td>T-shirt Sweet</td>
+                    <td>Qty: 1</td>
+                    <td>IDR 230.000</td>
+                  </tr>
+              </table>
+            </div> -->
+            <!-- <div class="span1 hidden-phone"></div> -->
+            <div class="span6">
+              <h4>I'm an Existing Customer</h3>
+              <form class="form-horizontal">
+
+                <div class="control-group">
+                  <label class="control-label" for="inputEmail">Email</label>
+                  <div class="controls">
+                    <input type="text" id="inputEmail" placeholder="Email">
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="inputPassword">Password</label>
+                  <div class="controls">
+                    <input type="password" id="inputPassword" placeholder="Password">
+                  </div>
+                </div>
+                <div class="control-group">
+                  <div class="controls">
+                    <label class="checkbox">
+                      <input type="checkbox"> Remember me
+                    </label>
+                    <button type="submit" class="btnflat action">Sign in</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="span3">
+              <h4>I'm New to Jooliett</h4>
+              <button class="btnflat action">Continue Checkout &raquo; </button>
+            </div>
+          </div>        
+        </div><!-- ./span12 -->
       </div><!-- ./ row-fluid -->
     </div><!-- ./container -->
 

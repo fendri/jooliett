@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Shopping Cart</title>
+    <title>Checkout - Billing Information</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -83,73 +83,82 @@
       </div><!-- ./navbar-inner -->
     </div><!-- ./navbar navbar-inverse -->
 
-    <div class="container">
+    <div class="container checkout">
       <div class="row-fluid">
-        <div class="span12 shopcart">
-          <h3>Your Shopping Cart</h3>
-          <form class="form-inline">
+        <div class="span12">     
 
-            <table class="table table-bordered table-hover">
-              <tr> 
-                <th class="span6 shopcart-item">Product(s)</th>
-                <th class="span2 shopcart-qty">Quantity</th>
-                <th class="span2 shopcart-price">Sub Total</th>
-              </tr>
-              <!-- Item 1 -->
-              <tr>
-                <td class="row">
-                  <div class="span2">
-                    <img src="img/dummy-data/jooliett-0993-small.jpg">
-                  </div>
-                  <div class="span6">
-                    <ul class="unstyled">
-                      <li>Yellow Mickey Mouse</li>
-                      <li>Discount: 35%</li>
-                      <li>IDR 327.900</li>
-                      <li><i class="icon-remove"></i>&nbsp;<a href="#" title="Remove this item from cart">Remove Item</a></li>
-                      <li><i class="icon-heart"></i>&nbsp;<a href="#" title="Buy later">Save for later</a></li>
-                    </ul>
-                  </div>
-                </td>
-                <td>
-                  <input class="span3" type="text" placeholder="1">
-                  <!-- <button type="submit" class="btn">Update</button> -->
-                </td>
-                <td>IDR 249.000</td>
-              </tr>
-              <!-- Item 2 -->
-              <tr>
-                <td class="row">
-                  <div class="span2">
-                    <img src="img/dummy-data/jooliett-0994-small.jpg">
-                  </div>
-                  <div class="span6">
-                    <ul class="unstyled">
-                      <li>Another Dress</li>
-                      <li>IDR 327.900</li>
-                      <li><i class="icon-remove"></i>&nbsp;<a href="#" title="Remove this item from cart">Remove Item</a></li>
-                      <li><i class="icon-heart"></i>&nbsp;<a href="#" title="Buy later">Save for later</a></li>
-                    </ul>
-                  </div>
-                </td>
-                <td>
-                  <input class="span3" type="text" placeholder="1">
-                  <!-- <button type="submit" class="btn">Update</button> -->
-                </td>
-                <td>IDR 249.000</td>
-              </tr>
-              <!-- Finale -->
-              <tr>
-                <td colspan="2" class="text-align">Total</td>
-                <td class="shopcart-total">IDR. 756.897</td>
-              </tr>
-            </table>
+          <h3>Billing Information</h3>      
+          <form class="form-horizontal">
+            <div class="control-group">
+              <label class="control-label" for="inputFirstName">First Name</label>
+              <div class="controls">
+                <input class="input-xlarge" type="text" id="inputEmail" placeholder="First Name">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="inputLastName">Last Name</label>
+              <div class="controls">
+                <input class="input-xlarge" type="text" id="inputEmail" placeholder="Last Name">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="inputEmail">Mobile</label>
+              <div class="controls">
+                <input class="input-xlarge" type="text" id="inputEmail" placeholder="mobile">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="inputEmail">Country</label>
+              <div class="controls">
+                <select>
+                  <option>Indonesia</option>
+                  <option>Non-Indonesia</option>
+                </select>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="inputAddress1">Address 1</label>
+              <div class="controls">
+                <input class="input-xlarge" type="text" id="inputEmail" placeholder="Address 1">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="inputAddress2">Address 2</label>
+              <div class="controls">
+                <input class="input-xlarge" type="text" id="inputEmail" placeholder="Address 2">
+                <span>(Optional)</span>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="inputAddress2">City</label>
+              <div class="controls">
+                <input type="text" id="inputEmail" placeholder="Address 2">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="inputAddress2">ZIP Code</label>
+              <div class="controls">
+                <input class="input-mini" type="text" id="inputEmail" placeholder="ZIP">
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="controls">
+              <button class="btnflat action">Next Step</button>
+              </div>
+            </div>
+
+
+            <label class="checkbox">
+            <input type="checkbox" value="">I'd like to receive exclusive discounts and style advice by email, post and SMS from Jooliett.
+            </label>
+
+            <label class="checkbox">
+            <input type="checkbox" value="">I'd like to receive updates by email, post and SMS from carefully selected Jooliett partners. See our <a href="#">privacy policy</a>.
+            </label>
+
           </form>
-          <div class="row-fluid">
-            <div class="span9"><a href="">Continue Shopping</a></div>
-            <div class="span3"><button class="pull-right btnflat-fluid action">Proceed to Checkout &raquo;</button></div>
-          </div>
-        </div><!-- ./shoppingcart -->
+
+        </div><!-- ./span12 -->
       </div><!-- ./ row-fluid -->
     </div><!-- ./container -->
 
