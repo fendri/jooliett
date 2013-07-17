@@ -85,56 +85,77 @@
 
     <div class="container checkout">
       <div class="row-fluid">
-        <div class="span12">     
+        <div class="span12">
+          <h3>Choose Payment Methods</h3>
+          <div class="row-fluid">
+            <div class="span10">
+              <div class="checkout-steps">
+                <ul class="unstyled clearfix">
+                  <li><span class="current"><a href="" title="Back to Previous">About You</a></span></li>
+                  <li><span class="current"><a href="" title="Back to Previous">Billing</a></span></li>
+                  <li><span class="current"><a href="" title="Back to Previous">Shipping</a></span></li>
+                  <li><span>Payment</span></li>
+                  <li><span>Summary &amp; Pay</span></li>
+                </ul>
+              </div> 
+              <form class="form-horizontal">
 
-          <h3>Choose Payment Methods</h3>      
-          <form class="form-horizontal">
+                <!-- Select -->
+                <ul class="unstyled clearfix select-payment">
+                  <li>
+                  <label class="radio">
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                    <img src="img/visa-straight-32px.png" alt="Visa">
+                  </label>
+                  </li>
+                  <li>
+                  <label class="radio">
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    <img src="img/mastercard-straight-32px.png" alt="Mastercard">
+                  </label>
+                  </li>
+                  <li>
+                  <label class="radio">
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    <img src="img/american-express-straight-32px.png" alt="American Express">
+                  </label>
+                  </li>
+                  <li>
+                  <label class="radio">
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    <img src="img/paypal-straight-32px.png" alt="Paypal">
+                  </label>
+                  </li>
+                  <li>
+                  <label class="radio">
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    <img src="img/western-union-straight-32px.png" alt="Western Union">
+                  </label>
+                  </li>
+                </ul>
 
-            <!-- Select -->
-            <ul class="unstyled clearfix select-payment">
-              <li>
-              <label class="radio">
-                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-                <img src="img/visa-straight-32px.png" alt="Visa">
-              </label>
-              </li>
-              <li>
-              <label class="radio">
-                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                <img src="img/mastercard-straight-32px.png" alt="Mastercard">
-              </label>
-              </li>
-              <li>
-              <label class="radio">
-                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                <img src="img/american-express-straight-32px.png" alt="American Express">
-              </label>
-              </li>
-              <li>
-              <label class="radio">
-                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                <img src="img/paypal-straight-32px.png" alt="Paypal">
-              </label>
-              </li>
-              <li>
-              <label class="radio">
-                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                <img src="img/western-union-straight-32px.png" alt="Western Union">
-              </label>
-              </li>
-            </ul>
-
-            <p><em>(By choosing Paypal, you'll be redirected to Paypal payment page after confirming your purchase details)</em></p>
-            <label class="checkbox">
-              <input type="checkbox" value="" checked>Rember this selection in the future.
-            </label>
-            <div class="control-group">
-              <div class="controls">
-              <button class="btnflat action">Next Step</button>
+                <p><em>(By choosing Paypal, you'll be redirected to Paypal payment page after confirming your purchase details)</em></p>
+                <label class="checkbox">
+                  <input type="checkbox" value="" checked>Rember this selection in the future.
+                </label>
+                <div class="control-group">
+                  <div class="controls">
+                  <button class="btnflat action">Next Step</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="span2">
+              <h5>Need Help?</h5>
+              <div class="helpbox">
+                <ul class="unstyled">
+                  <li><i class="icon-info-sign"></i> +62-21-89788990</li>
+                  <li><i class="icon-envelope"></i> cs@jooliett.com</li>
+                  <li><i class="icon-comment"></i> jooliett (skype)</li>
+                  <li><i class="icon-time"></i> 09.00 - 18.00</li>
+                </ul>
               </div>
             </div>
-
-          </form>
 
         </div><!-- ./span12 -->
       </div><!-- ./ row-fluid -->

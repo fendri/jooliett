@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Checkout - Shipping Information</title>
+    <title>Checkout - Payment Details</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -87,74 +87,75 @@
       <div class="row-fluid">
         <div class="span12">     
 
-          <h3>Shipping Information</h3>
+          <h3>Choose Payment Methods</h3>
           <div class="row-fluid">
             <div class="span10">
               <div class="checkout-steps">
                 <ul class="unstyled clearfix">
                   <li><span class="current"><a href="" title="Back to Previous">About You</a></span></li>
                   <li><span class="current"><a href="" title="Back to Previous">Billing</a></span></li>
-                  <li><span class="current">Shipping</span></li>
-                  <li><span>Payment</span></li>
+                  <li><span class="current"><a href="" title="Back to Previous">Shipping</a></span></li>
+                  <li><span class="current">Payment</a></span></li>
                   <li><span>Summary &amp; Pay</span></li>
                 </ul>
-              </div>
+              </div>      
               <form class="form-horizontal">
-                <label class="checkbox">
-                <input type="checkbox" value="" checked> Same as billing information (Uncheck to input different address)
-                </label>
-                <div class="control-group">
-                  <label class="control-label" for="inputFirstName">First Name</label>
-                  <div class="controls">
-                    <input class="input-xlarge" type="text" id="inputEmail" placeholder="Indiana" disabled>
-                  </div>
-                </div>
-                <div class="control-group">
-                  <label class="control-label" for="inputLastName">Last Name</label>
-                  <div class="controls">
-                    <input class="input-xlarge" type="text" id="inputEmail" placeholder="Jones" disabled>
-                  </div>
-                </div>
-                <div class="control-group">
-                  <label class="control-label" for="inputEmail">Mobile</label>
-                  <div class="controls">
-                    <input class="input-xlarge" type="text" id="inputEmail" placeholder="+628111897234" disabled>
-                  </div>
-                </div>
-                <div class="control-group">
-                  <label class="control-label" for="inputEmail">Country</label>
-                  <div class="controls">
-                    <select disabled>
-                      <option>Indonesia</option>
-                      <option>Non-Indonesia</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="control-group">
-                  <label class="control-label" for="inputAddress1">Address 1</label>
-                  <div class="controls">
-                    <input class="input-xlarge" type="text" id="inputEmail" placeholder="Jl. Mendawai 4 No. 95 Kebayoran Baru" disabled>
-                  </div>
-                </div>
-                <div class="control-group">
-                  <label class="control-label" for="inputAddress2">Address 2</label>
-                  <div class="controls">
-                    <input class="input-xlarge" type="text" id="inputEmail" placeholder="Address 2" disabled>
-                    <span>(Optional)</span>
-                  </div>
-                </div>
-                <div class="control-group">
-                  <label class="control-label" for="inputAddress2">City</label>
-                  <div class="controls">
-                    <input type="text" id="inputEmail" placeholder="Jakarta Selatan" disabled>
-                  </div>
-                </div>
-                <div class="control-group">
-                  <label class="control-label" for="inputAddress2">ZIP Code</label>
-                  <div class="controls">
-                    <input class="input-mini" type="text" id="inputEmail" placeholder="12100" disabled>
-                  </div>
-                </div>
+                <!-- Select -->
+                <ul class="unstyled select-payment2">
+                  <li>
+                    <label class="radio">
+                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                      <img src="img/visa-straight-32px.png" alt="Visa">
+                      <span>Transfer BCA</span>
+                    </label>
+                    <p><span>Bank BCA KCP Wolter Mongisidi a/n Jooliett</span><br>
+                    <span>No. Rek.: 564 231 8777</span></p>
+                  </li>
+                  <li>
+                    <label class="radio">
+                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                      <img src="img/mastercard-straight-32px.png" alt="Mastercard">
+                      <span>Transfer Bank Mandiri</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="radio">
+                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                      <img src="img/american-express-straight-32px.png" alt="American Express">
+                      <span>KlikBCA Internet Banking</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="radio">
+                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                      <img src="img/mastercard-straight-32px.png" alt="Mastercard">
+                      <span>BCA KlikPay</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="radio">
+                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                      <img src="img/paypal-straight-32px.png" alt="Paypal">
+                      <span>PayPal Transfer</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="radio">
+                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                      <img src="img/western-union-straight-32px.png" alt="Western Union">
+                      <span>Western Union</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="radio">
+                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                      <img src="img/visa-straight-32px.png" alt="Visa">
+                      <span>Credit Card (VISA / MasterCard)</span>
+                    </label>
+                  </li>
+                </ul>
+
+                
                 <div class="control-group">
                   <div class="controls">
                   <button class="btnflat action">Next Step</button>
