@@ -8,7 +8,6 @@
     <meta name="author" content="">
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <style type="text/css">
         body {
@@ -21,8 +20,19 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container">
-        <div class="row">
+    <!-- Alert Bar -->
+    <div class="statusbar success">
+      <div class="container">
+          <div class="content">
+              <span>Alert Bar! (Class: .success .error .notic .info)</span>
+              <a href="#" class="close" data-dismiss="alert">&times;</a>
+          </div>
+      </div>
+    </div>
+
+    <div class="container" style="padding-top: 100px">
+
+        <div class="row-fluid">
             <h1>Components</h1>
             <h3>Color Tags</h3>
             <span class="color-tag salmon"><a href="">Salmon</a></span>
@@ -38,19 +48,33 @@
             <span class="color-tag maroon"><a href="">Maroon</a></span>
             <span class="color-tag aquamarine"><a href="">Aqua Marine</a></span>
             <span class="color-tag lavender"><a href="">Lavender</a></span>
-            <!-- <span class="color-tag ivory"><a href="">Ivory</span> -->
+            <span class="color-tag ivory"><a href="">Ivory</a></span>
             <span class="color-tag azure"><a href="">Azure</a></span>
             <span class="color-tag forestgreen"><a href="">Forest Green</a></span>
             <span class="color-tag lime"><a href="">Lime</a></span>
             <span class="color-tag olive"><a href="">Olive</a></span>
 
             <h3>Color Tag Selected</h3>
-            <span class="color-tag salmon"><a href="">Salmon</a></span>
+            <span class="color-tag salmon selected"><a href="">Salmon</a></span>
             <span class="color-tag golden selected"><a href="">Golden Rod</a></span>
-            <span class="color-tag hotpink"><a href="">Hot Pink</a></span>
-            <span class="color-tag teal"><a href="">Teal</a></a></span>
+            <span class="color-tag hotpink selected"><a href="">Hot Pink</a></span>
+            <span class="color-tag teal selected"><a href="">Teal</a></a></span>
+            <span class="color-tag navyblue selected"><a href="">Navy Blue</a></span>
+            <span class="color-tag crimson selected"><a href="">Crimson</a></span>
+            <span class="color-tag indigo selected"><a href="">Indigo</a></span>
+            <span class="color-tag coral selected"><a href="">Coral</a></span>
+            <span class="color-tag khaki selected"><a href="">Khaki</a></span>
+            <span class="color-tag minty selected"><a href="">Minty</a></span>
+            <span class="color-tag maroon selected"><a href="">Maroon</a></span>
+            <span class="color-tag aquamarine selected"><a href="">Aqua Marine</a></span>
+            <span class="color-tag lavender selected"><a href="">Lavender</a></span>
+            <span class="color-tag ivory selected"><a href="">Ivory</a></span>
+            <span class="color-tag azure selected"><a href="">Azure</a></span>
+            <span class="color-tag forestgreen selected"><a href="">Forest Green</a></span>
+            <span class="color-tag lime selected"><a href="">Lime</a></span>
+            <span class="color-tag olive selected"><a href="">Olive</a></span>
         </div>
-        <div class="row">
+        <div class="row-fluid">
             <h3>Size Tags</h3>
             <h4>Normal, none selected:</h4>
             <span class="size-tag"><a href="">S</a></span>
@@ -64,7 +88,7 @@
             <span class="size-tag"><a href="">L</a></span>            
         </div>
 
-        <div class="row">
+        <div class="row-fluid">
             <h3>Custom Buttons</h3>
             <h4>Default Button</h4>
             <button class="btnflat default">Button Name</button>
@@ -79,7 +103,7 @@
             <button class="btnflat-fluid action addcart">Add To Cart</button>
         </div>
 
-        <div class="row">
+        <div class="row-fluid">
             <h3>Quick Cart</h3>
             <div class="quickcart">
                 <div class="qcart-item row">
@@ -100,34 +124,34 @@
             </div>
         </div>
         <!-- Forms -->
-        <div class="row">
+        <div class="row-fluid">
             <h3>Form: 3 Columns</h3>
-            <div class="row">
+            <div class="row-fluid">
                 <div class="span3"><label>First Name <small>*</small></label></div>
                 <div class="span3"><input type="Text"></div>
                 <div class="span1">&nbsp;</div>
             </div>
-            <div class="row">
+            <div class="row-fluid">
                 <div class="span3"><label>Last Name <small>*</small></label></div>
                 <div class="span3"> <input type="Text"></div>
                 <div class="span1">&nbsp;</div>
             </div>
-            <div class="row">
+            <div class="row-fluid">
                 <div class="span3"><label>Telephone</label></div>
                 <div class="span3"> <input type="tel"></div>
                 <div class="span1">&nbsp;</div>
             </div>
-            <div class="row">
+            <div class="row-fluid">
                 <div class="span3"><label>Mobile</label></div>
                 <div class="span3"> <input type="tel"></div>
                 <div class="span1"><small><em>(Optional)</em></small></div>
             </div>
-            <div class="row">
+            <div class="row-fluid">
                 <div class="span3"><label>Mobile</label></div>
                 <div class="span3"> <input type="tel"></div>
                 <div class="span1"><small><em>(Optional)</em></small></div>
             </div>
-            <div class="row">
+            <div class="row-fluid">
                 <div class="span3"><label>Country</label></div>
                 <div class="span3">
                     <select>
@@ -149,7 +173,7 @@
         </div><!-- ./row -->
 
 
-        <div class="row">
+        <div class="row-fluid">
             <h3>Form: Control Group Style</h3>
             <form class="form-horizontal">
               <div class="control-group">
@@ -175,7 +199,7 @@
             </form>
         </div>
         <!-- Thumbnail -->
-        <div class="row">
+        <div class="row-fluid">
             <h3>Item: Normal Thumbnail</h3>
             <!-- Start from here -->
             <div class="span2">
@@ -189,7 +213,7 @@
             </div>
         </div>
         <!-- Thumbnail -->
-        <div class="row">
+        <div class="row-fluid">
             <h3>Item: You May Like</h3>
             <!-- Col 1 -->
             <div class="span3">
@@ -238,4 +262,19 @@
 
     </div><!-- ./container -->
   </body>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
 </html>

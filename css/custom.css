@@ -177,7 +177,37 @@ td.shopcart-total {
 .wrapper {
 	margin: 0 0 20px 0;
 }
-
+.statusbar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 2000;
+	margin-bottom: 0;
+}
+.statusbar .content {
+	padding: 20px 0;
+	font-size: 24px;
+}
+.success {
+	background-color: #dff0d8;
+	color: #468847;
+}
+.notice {
+	background-color: #fcf8e3;
+	color: #c09853
+}
+.error {
+	background-color: #f2dede;
+	color: #b94a48;
+}
+.info {
+	background-color: #d9edf7;
+	color: #3a87ad;	
+}
+.statusbar .close {
+	font-size: 28px;
+}
 /* Carousel (home slider) */
 .carousel {
 	margin: -18px 0 0 0;
@@ -379,7 +409,8 @@ td.shopcart-total {
 	text-decoration: none;
 }
 .color-tag.selected a {
-	border: 2px solid #666;
+	border: 2px solid #333;
+	background-color: #333;
 }
 .color-tag.selected a:hover {
 	border: 2px solid #999;
@@ -387,56 +418,111 @@ td.shopcart-total {
 .salmon>a { 
 	background-color: #FA8072;
 }
+.salmon.selected>a {
+	color: #FA8072
+} 
 .teal>a {
 	background-color: #008080;
 }
+.teal.selected>a {
+	color: #008080
+} 
 .minty>a {
 	background-color: #7eca0e;
+}
+.minty.selected>a {
+	color: #7eca0e;
 }
 .navyblue>a  {
 	background-color: #000080;
 }
+.navyblue.selected>a {
+	color: #FFF;
+}
 .crimson>a  { 
 	background-color: #DC143C;
+}
+.crimson.selected>a {
+	color: #DC143C;
 }
 .indigo>a  { 
 	background-color: #4B0082;
 }
+.indigo.selected>a {
+	color: #FFF;
+}
 .khaki>a  { 
 	background-color: #C3B091;
+}
+.khaki.selected>a {
+	color: #C3B091;
 }
 .maroon>a  { 
 	background-color: #800000;
 }
+.maroon.selected>a {
+	color: #FFF;
+}
 .golden>a  {
 	background-color: #FFD700;
+}
+.golden.selected>a {
+	color: #FFD700
 }
 .coral>a  { 
 	background-color: #FF7F50;
 }
+.coral.selected>a {
+	color: #FF7F50;
+}
 .hotpink>a  { 
 	background-color: #FC0FC0;
+}
+.hotpink.selected>a {
+	color: #FC0FC0;
 }
 .forestgreen>a  { 
 	background-color: #228B22;
 }
+.forestgreen.selected>a {
+	color: #228B22;
+}
 .lavender>a  {
 	background-color: #B57EDC;
+}
+.lavender.selected>a {
+	color: #B57EDC;
 }
 .azure>a  {
 	background-color: #007FFF;
 }
+.azure.selected>a {
+	color: #007FFF;
+}
 .ivory>a  { 
 	background-color: #FFFFF0;
+	color: #68681c;
+}
+.ivory.selected>a {
+	color: #FFFFF0;
 }
 .aquamarine>a  { 
 	background-color: #7FFFD4;
 }
+.aquamarine.selected>a {
+	color: #7FFFD4;
+}
 .lime>a  {
 	background-color: #BFFF00;
 }
+.lime.selected>a {
+	color: #BFFF00;
+}
 .olive>a  { 
 	background-color: #008080;
+}
+.olive.selected>a {
+	color: #008080;
 }
 /* Section Title */
 .section-title {
@@ -461,11 +547,16 @@ td.shopcart-total {
 	line-height: 2rem;
 	color: #333;
 }
-.size-tag a:hover,.size-tag.selected a {
+.size-tag a:hover,.size-tag.selected a:hover {
 	background-color: #f2108a;
 	text-decoration: none;
 	color: #fff;
 	border: 1px solid #f2108a;
+}
+.size-tag.selected a {
+	background-color: #333;	
+	color: #fff;
+	border-color: #333
 }
 /* Component: Quick Cart */
 .quickcart {
