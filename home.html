@@ -45,6 +45,8 @@
               <li><a href="video.html">Video</a></li>
             </ul>
             <ul class="nav pull-right">
+              <li class="dropdown"><a id="drop6" href="#loginModal" role="button" class="dropdown-toggle" data-toggle="modal">Login</a>
+              </li>
               <li id="fat-menu" class="dropdown">
                 <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown"><span class="qcart-count">3</span> Cart<b class="caret"></b></a>
                 <div class="dropdown-menu quickcart" role="menu" aria-labelledby="drop3">
@@ -60,7 +62,7 @@
                   </div>
 
                   <!-- QuickCart -->
-                  <div class="qcart-item row">
+                  <!-- <div class="qcart-item row">
                       <div class="span1">
                           <img src="img/dummy-data/jooliett-0996-small.jpg">
                       </div>
@@ -68,7 +70,7 @@
                           <span class="qcart-item-name">Yellow Mickey Mouse</span>
                           <span class="qcart-item-price">IDR 249.000</span>
                       </div>
-                  </div>
+                  </div> -->
                   <!-- /qcart-item -->
                   <div class="qcart-action">
                       <p class="msg success">Successfully Added to cart</p>
@@ -135,6 +137,33 @@
       <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
     </div>
 
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="loginModalLabel">Login</h3>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+          <div class="control-group">
+            <label class="control-label" for="inputEmail">Email</label>
+            <div class="controls">
+              <input type="text" id="inputEmail" placeholder="Email">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="inputPassword">Password</label>
+            <div class="controls">
+              <input type="password" id="inputPassword" placeholder="Password">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btnflat default" data-dismiss="modal" aria-hidden="true">Close</button>
+        <button class="btnflat action">Login</button>
+      </div>
+    </div>
 
    <!-- Footer -->
     <div id="footer">
@@ -156,6 +185,7 @@
         </div>
       </div>
     </div>
+
 
     <!-- Le javascript
     ================================================== -->
