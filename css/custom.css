@@ -22,7 +22,7 @@ body {
 	color: #4444;
 	/*font-size: 16px;*/
 	line-height: 135%;
-	margin: 59px 0 30px 0;
+	margin: 59px 0 75px 0;
 }
 .container, 
 .navbar-static-top .container, 
@@ -160,6 +160,10 @@ a:hover>img {
 	padding-top:23px;
 	padding-bottom: 23px;
 	font-size: 1.4rem;
+}
+/* Sidebar: Widget */
+.widget {
+	margin-bottom: 20px;
 }
 /* Shopping Cart */
 .shopcart th {
