@@ -627,6 +627,16 @@ input {
 .checkout-steps span {	
 	color: #ccc;
 	padding-bottom: 5px;
+	text-transform: uppercase;
+}
+.checkout-steps .completed {
+	border-bottom: 2px solid #ccc;
+}
+.checkout-steps .completed:hover {
+	border-color: #f2108a
+}
+.checkout-steps .completed a {
+	color: #ccc
 }
 .checkout-steps .current {
 	color: #f2108a;
