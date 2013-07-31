@@ -765,6 +765,47 @@ input {
 #footer a {
 	color: #777;
 }
+
+#pagination {
+	margin-top: 50px;
+	margin-bottom: 0px;
+	text-align: center;
+	display: block;
+	float: none;
+	z-index: 2;
+	position: relative;
+}
+
+#pagination ul {
+	margin: 0 0 20px;
+	list-style: none;
+	padding: 0;
+}
+
+#pagination ul li {
+	display: inline-block;
+}
+
+
+#pagination ul li a {
+	display: block;
+	float: left;	
+	color: inherit;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	font-weight: 600;
+	text-decoration:none;
+}
+#pagination ul li a span {
+	font-size: 14px;
+	padding: 5px 10px 5px;
+	border: 2px solid #f2f2f2; 
+}
+
+#pagination ul li a span:hover {
+	background:#e06d5e;
+}
+
 /* Large Desktop */
 @media (min-width: 1200px) {}
 /* Portrait tablet to landscape and desktop */
@@ -850,6 +891,8 @@ input {
 		margin-top: 0
 	}
 }
+
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
 	body {
