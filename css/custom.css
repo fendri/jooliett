@@ -271,11 +271,11 @@ input {
 /* Carousel-caption Box Position */
 .pos1 {
  	left: 100px;
- 	bottom: 200px;
+ 	bottom: 300px;
  }
 .pos2 {
 	left: 500px;
-	bottom: 200px;
+	bottom: 300px;
 }
 @media (width: 1024px) {
 	.pos2 {
@@ -285,7 +285,7 @@ input {
 }
 .pos3 {
 	left: 600px;
-	bottom: 200px;
+	bottom: 300px;
 }
 
 /* Products */
