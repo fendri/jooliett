@@ -448,6 +448,20 @@ input {
 .color-tag.selected a:hover {
 	border: 2px solid #999;
 }
+.white>a {
+	color: #333;
+	background-color: #f9f9f9;
+}
+.white.selected>a {
+	color: #fff;
+}
+.gray>a {
+	color: #333;
+	background-color: #ccc;
+}
+.gray.selected>a {
+	color: #ccc;
+}
 .salmon>a { 
 	background-color: #FA8072;
 }
